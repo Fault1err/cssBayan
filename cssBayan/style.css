@@ -11,6 +11,11 @@ hr {
     width: 700px;
 }
 
+p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 .line_flex1 {
     display: flex;
     justify-content: space-between;
@@ -22,11 +27,9 @@ hr {
     display: none;
     justify-content: space-between;
     transition: 2s;
-
 }
 
 .material-symbols-outlined {
-    /* display: none; */
     align-self: center;
 }
 
@@ -49,6 +52,7 @@ hr {
 .line_block:hover .line_flex1 {
     display: none;
     transition: 2s;
+    /* height: 0; */
 }
 
 .line_block:hover .line_flex2 {
@@ -59,6 +63,7 @@ hr {
 .img_pic {
     height: 0;
     transition: 2s;
+    width: 30%;
 }
 
 .line_block:hover .img_pic {
