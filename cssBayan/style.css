@@ -141,8 +141,46 @@ p {
     align-self: center;
 } */
 
-@media (min-width: 1000px) and (max-width: 2048px) {}
+@media (min-width: 501px) and (max-width: 1200px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 
-@media (min-width: 501px) and (max-width: 999px) {}
+    hr {
+        width: 500px;
+    }
 
-@media (max-width: 500px) {}
+    h1 {
+        margin-top: 50px;
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1.2em;
+        font-weight: 600;
+        width: 99%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    hr {
+        width: 250px;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+        font-weight: 600;
+        width: 99%;
+    }
+}
