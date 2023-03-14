@@ -1,0 +1,186 @@
+body {
+    background-color: #F0FFFF;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+hr {
+    width: 700px;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 99%;
+}
+
+.line_flex1 {
+    display: flex;
+    justify-content: space-between;
+    transition: 2s;
+    height: auto;
+}
+
+.line_flex2 {
+    display: none;
+    justify-content: space-between;
+    transition: 2s;
+}
+
+@keyframes smooth {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.material-symbols-outlined {
+    align-self: center;
+}
+
+.img_line {
+    text-align: center;
+    /* display: none; */
+    height: 0;
+}
+
+.line_block {
+    transition: 2s;
+}
+
+.line_block:hover .img_line {
+    /* display: block; */
+    height: auto;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.line_block:hover .line_flex1 {
+    display: none;
+    transition: 2s;
+    cursor: pointer;
+    animation: smooth 0.8s ease-in-out;
+}
+
+/* .line_block:hover .arr_pic {
+    display: none;
+    transition: 2s;
+    cursor: pointer;
+    animation: smooth 0.8s ease-in-out;
+} */
+
+.line_block:hover .line_flex2 {
+    display: flex;
+    transition: 2s;
+    cursor: pointer;
+    animation: smooth 0.8s ease-in-out;
+}
+
+.img_pic {
+    height: 0;
+    transition: 2s;
+    width: 30%;
+}
+
+.line_block:hover .img_pic {
+    /* display: block; */
+    height: auto;
+    transition: 2s;
+    cursor: pointer;
+    animation: smooth 0.8s ease-in-out;
+}
+
+/* .line_block:hover .close_pic {
+    display: block;
+    transition: 2s;
+    cursor: pointer;
+    animation: smooth 0.8s ease-in-out;
+} */
+
+/* .arr_pic {
+    display: block;
+    align-items: center;
+} */
+
+/* .line_block:hover .arr_pic {
+    display: none;
+    transition: 2s;
+    cursor: pointer;
+    animation: smooth 0.8s ease-in-out;
+} */
+
+/* .arr_img {
+    width: 7%;
+    margin-left: 92%;
+    align-self: center;
+} */
+
+/* .close_pic {
+    display: none;
+    align-items: center;
+} */
+
+/* .line_block:hover .arr_pic {
+    display: block;
+    height: auto;
+    transition: 2s;
+    cursor: pointer;
+    animation: smooth 0.8s ease-in-out;
+    display: none;
+} */
+
+/* .close_img {
+    width: 73%;
+    margin-left: 20%;
+    align-self: center;
+} */
+
+@media (min-width: 501px) and (max-width: 1200px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    hr {
+        width: 500px;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1.2em;
+        font-weight: 600;
+        width: 99%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    hr {
+        width: 250px;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+        font-weight: 600;
+        width: 99%;
+    }
+}
